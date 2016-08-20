@@ -34,6 +34,12 @@ hr{height:0;border:0;border-top:1px solid #eee;margin:20px 0}
 img{margin-bottom:-5px}a{color:inherit}
 table{border-collapse:collapse;border-spacing:0;width:100%;display:table}
 table,th,td{border:none}.w3-table-all{border:1px solid #ccc}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+    padding-left: 10px;
+}
 .w3-bordered tr,.w3-table-all tr{border-bottom:1px solid #ddd}
 .w3-striped tbody tr:nth-child(even){background-color:#f1f1f1}
 .w3-table-all tr:nth-child(odd){background-color:#fff}
