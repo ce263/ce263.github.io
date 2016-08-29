@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <title>CE263|Scalable Spatial Analytics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif;
+        }
+
+        .w3-navbar,
+        button,
+        h1 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px;
+        }
+
+    </style>
+
+    <body>
+
+        <!-- Header -->
+        <div class="w3-container w3-light-blue-gradient w3-center w3-padding-100 w3-text-white">
+            <h1 class="w3-margin w3-jumbo">CE 263N: Scalable Spatial Analytics</h1>
+            <h2 class="w3-xlarge">Fall 2016</h2>
+            <div class="w3-padding-12"></div>
+            <a href="index.html" class="btn">Home</a>
+            <a href="https://bcourses.berkeley.edu/courses/1454647" class="btn">Bcourses</a>
+            <a href="https://piazza.com/class/is6p7hj9xgd7ag" class="btn">Piazza</a>
+            <a href="python_guide.html" class="btn">Python Guide</a>
+        </div>
+
+        <div class="w3-row-padding  w3-padding-32 w3-container">
+            <div class="w3-content">
+                <div class="w3-padding-left-100">
+                    <h1 id="general-info">Python Guide</h1>
+
+                    <h4>
+                        <p>This is a simple document to walk you through the installation of
+                            <strong>python</strong>
+                            and
+                            <strong>ipython notebook</strong>
+                            (one of the Integrated Development Environment IDE).</p>
+                    </h4>
+                    <h2 class="w3-text-grey">Python 2 or Python 3?</h2>
+                    <h4>
+                        <p>In most of the case, no matter you are using mac, windows, or ubantu, one or more versions of python is pre-installed. Currently, there are two prevailing versions of python: python 2.X and 3.X. Python 3 is slightly newer but, python 2 could be
+                            more stable and have more library support. Generally, python 2 is recommended for its stability and package avaialbility. And I, the GSI, am more familiar with python 2 than python 3.
+                        </p>
+                        <p>The syntax of them are almost identical with only a few exceptions. A comparison between them can be found
+                            <a href="https://wiki.python.org/moin/Python2orPython3">here</a>. Most packages that are going to be used in this class, such as
+                            <a href="http://scikit-learn.org/stable/">sklearn</a>, are supported by both python 2 and python 3. As mentioned in class, we will try to accommodate both versions.
+                        </p>
+
+                        <div class="w3-padding-8"></div>
+                        <h2 class="w3-text-grey">Coding in Python</h2>
+                        <h4>
+                            <p>Generally, there are two ways of coding python</p>
+
+                            <ol>
+                                <!-- <li><p>Code directly in a shell (bash in mac and cmd window in windows). In this way, your code cannot be reused.</p>
+
+        <ol><li><p>In mac, you can simply start a terminal and type: ($ is already there so you do not need to type it) <br>
+        <code>$ python</code></p></li>
+        <li><p>In windows, this is usually hard since the path to python is usually not automatically set. Check <a href="http://stackoverflow.com/questions/4621255/how-do-i-run-a-python-program-in-the-command-prompt-in-windows-7">it</a> out if you really want to do it in windows.</p></li></ol></li> -->
+
+                                <li>
+                                    <p>
+                                        <b>Use IDE : recommended for beginners.</b>
+                                    </br>
+                                    IDEs allow you to write script and run it, see the result simultaneously! ipython notebook is one of the leading IDE for python. I personally like it most comparing to several IDEs including pycharm and spider because of the simplicity of use and
+                                    clarity of the outputs. You could explore more about ipython notebook here
+                                    <a href="http://ipython.org/notebook.html">here</a>.</p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    <b>Use text editors : the expert way.</b>
+                                </br>
+                                Code in any text editors and use bash shell to run python script. There are some good choises of text universal editors, such as
+                                <a href="https://atom.io/">Atom</a>
+                                and
+                                <a href="https://www.sublimetext.com/">Sublime</a>. Check this
+                                <a href="http://pythoncentral.io/execute-python-script-file-shell/">article</a>
+                                out about on how to run your python scripts. Text editors are smoother in text editing due to their light weights. This approach is also useful when you need to run something remotely on the server where only a shell (but no GUI) is available to you.</p>
+                        </li>
+                    </ol>
+
+                </h4>
+
+                <div class="w3-padding-8"></div>
+                <h2 class="w3-text-grey">Installation of python and ipython notebook</h2>
+                <h4>
+
+                    <p>No matter if you have a python or not in your computer, you can install python and ipython notebook, as well as other dependencies and packages through Anaconda.
+                    </p>
+
+                    <p>The installation is pretty easy on all operating systems, check this page out:
+                        <a href="http://docs.continuum.io/anaconda/install">http://docs.continuum.io/anaconda/install</a>
+                    </p>
+
+                    <p>After having it installed, you are ready to run python through ipython notebook. Just start a bash shell in terminal (mac) or a cmd window (windows). Type:</p>
+
+                    <pre><code>$ ipython notebook</code></pre>
+
+                    <p>If you see a new tab appearing in your browser, you are all set! If not, paste the error message to google and search how other people solved it. If no satisfactory answer is found, paste your error message and a screenshot to Piazza. We will help
+                        you!</p>
+
+                    <p>If you cannot wait to play with python using ipython notebook, follow this
+                        <a href="http://cs231n.github.io/ipython-tutorial/">page</a>. We will go through more examples later in class.</p>
+
+                </h4>
+
+                <div class="w3-padding-8"></div>
+                <h2 class="w3-text-grey">Troubleshooting and Other Suggestions</h2>
+
+                <h4>
+
+                    <ul>
+                        <li>
+                            <p>
+                                If you cannot help following more examples, check out this
+                                <a href="https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks#introductory-tutorials">page</a>. It would be great if you can finish one or more materials from Introductory Tutorials.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>Google is your friend</p>
+                        </li>
+                        <li>
+                            <p>StackOverflow is your friend</p>
+                        </li>
+                        <li>
+                            <p>Discuss with your friends</p>
+                        </li>
+                        <li>Ask questions on Piazza and me before approaching to Alexei :)</li>
+                    </ul>
+
+                </h4>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-32">
+        Created by Mogeng Yin in Aug, 2015
+    </br>
+    Edited by Ziheng Lin in Aug, 2016
+
+</div>
+
+</body>
+
+</html>
